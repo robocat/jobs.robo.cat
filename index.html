@@ -2,215 +2,92 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Robocat Jobs</title>
     <link rel="icon" type="image/png" href="robocat.png">
-    <style>
-      body {
-        margin: 0;
-        font-family: "Helvetica Neue" Helvetica;
-        font-size: 20px;
-        line-height: 1.6;
-        font-weight: 200;
-      }
-      a {
-        color: #ff580f;
-        font-weight: bold;
-        text-decoration: none;
-      }
-      nav {
-        background-color: #f3f3f3;
-        text-align: center;
-      }
-      header {
-        background: #964c3b url("./header.jpg") no-repeat center;
-        height: 486px;
-        color: white;
-      }
-      h1 {
-        margin: 0;
-        padding: 100px 0px;
-        text-align: center;
-        font-size: 75px;
-        font-weight: 100;
-        line-height: 1em;
-      }
-      header h1 {
-        padding-top: 220px;
-      }
-      footer h1 {
-        padding-top: 253px;
-      }
-      section h2 {
-        padding-top: 48px;
-      }
-      h2 {
-        margin-top: 0;
-        font-size: 43px;
-        font-weight: 100;
-      }
-      article {
-        margin: auto;
-        -webkit-column-width: 480px;
-        -moz-column-width: 480px;
-        -ms-column-width: 480px;
-        -o-column-width: 480px;
-        column-width: 480px;
-        -webkit-column-gap: 0;
-        -mox-column-gap: 0;
-        -ms-column-gap: 0;
-        -o-column-gap: 0;
-        column-gap: 0;
-      }
-      footer {
-        color: white;
-        background: #205688 url("footer.jpg") no-repeat center;
-        height: 660px;
-      }
-      #robocat {
-        margin: 8px -11px -12px -46px;
-      }
-      section {
-        max-width: 480px;
-        height: 170px;
-      }
-      section img {
-        margin-right: 15px;
-        margin-bottom: -20px;
-      }
-      figure img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      #mail {
-        color: black;
-        background-color: #fff462;
-      }
-      #twitter {
-        color: black;
-        background-color: #96efff;
-      }
-      #mail:hover {
-        background-color: #cdc44c;
-      }
-      #twitter:hover {
-        background-color: #76c0cd;
-      }
-      hr {
-        border: 0;
-        height: 100px;
-      }
-      main {
-        margin: auto;
-        max-width: 960px;
-      }
-      #software {
-        float: left;
-      }
-      @media (max-width: 1000px) {
-        hr {
-          height: 0px;
-        }
-        h1 {
-          font-size: 50px;
-        }
-        main {
-          max-width: 480px;
-        }
-        #software {
-          display: none;
-        }
-        #robocat {
-          height: 40px;
-          width: 40px;
-          margin: 0px -11px -6px 4px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <header><h1>Robocat Jobs</h1></header>
 
-    <h1>
-      We&rsquo;re looking for another
-      <br />
-      <img id='robocat' src='robocat.png' alt='robo-' />
-      cat in Copenhagen
-    </h1>
-    <main>
-      <article>
-        <h2>Software developer</h2>
-        <p>
-          Our latest project is called
-          <a href='http://wordbaseapp.com'>Wordbase</a>, it’s a fun game. We
-          are searching for a second developer who can help us developing the
-          server-side of the game.  It’s written in Python. And we like Python.
-          Hope you like it too.  We are using Flask and SQLAlchemy, but you
-          don’t need to know them. But we hope that you know how databases and
-          web works.
-        </p>
-        <p>
-          We have other server-side software written in Ruby and Rails, which
-          you will get to work as well. But we can’t wait to start a new
-          project in something that involves Clojure, Erlang, Scala or Ocaml.
-          So if you know those it’s cool as well. We want you to be good at
-          both functional and object-oriented programming, as well as
-          test-driven development.
-        </p>
-        <figure>
-        <img id='software' src='software.jpg'
-             alt='Image of laptop screen with Python code.' />
-             </figure>
-      </article>
-      <hr />
-      <article>
-             <figure>
-        <img src='robocat.jpg' alt='Robocat logo.' />
-             </figure>
-        <h2>Robocat</h2>
-        <p>
-          Here at
-          <a href='http://robo.cat'>Robocat</a>
-          we make apps and games for mobile devices. Our projects are small,
-          but focused.  We want you to work at our office in downtown
-          Copenhagen (near Nørreport station), but homeworking some of
-          the time is cool too. If you want to move to Copenhagen—we will try
-          to help.  We are looking for a full-time developer, but we can
-          compromise on that if we really want to hire you.
-        </p>
-        <p>
-          We are small, profitable, self-bootstrapped and easy going.
-          Right now we are 5 full-time and 5 part-time employees.
-        </p>
-      </article>
-    </main>
+    <div class='header-container'>
+      <div class='header'><h1>Robocat Jobs</h1></div>
+    </div>
 
-    <hr />
+    <div class='main-container'>
+      <div class='main'>
 
-    <nav>
-      <main>
-        <article>
-          <a id='mail' href='mailto:hello@robo.cat'>
-            <section id='mail'>
-              <h2>
-                <img src='mail.png' alt='Mail icon.' />
-                Get in touch
-              </h2>
-            </section>
-          </a>
-          <a id='twitter'
-             href='http://twitter.com/home?status=Did you know @robocat is looking for Python/Ruby/Clojure/Erlang/Scala/OCaml hackers in Copenhagen? http://jobs.robo.cat/'>
-            <section id='twitter'>
-              <h2>
-                <img src='twitter.png' alt='Twitter icon.' />
-                Tweet about it
-              </h2>
-            </section>
-          </a>
-        </article>
-      </main>
-    </nav>
+        <h2>
+          We’re looking for another
+          <br />
+          <img id='robocat' src='robocat.png' alt='robo-' />
+          cat in Copenhagen
+        </h2>
 
-    <footer><h1>Guaranteed fun &amp; hard work</h1></footer>
+        <div class='section'>
+          <h3>Software developer</h3>
+          <p>
+            Our latest project is called
+            <a href='http://wordbaseapp.com'>Wordbase</a>, it’s a fun game. We
+            are searching for a second developer who can help us developing the
+            server-side of the game.  It’s written in Python. And we like Python.
+            Hope you like it too.  We are using Flask and SQLAlchemy, but you
+            don’t need to know them. But we hope that you know how databases and
+            web works.
+          </p>
+          <p>
+            We have other server-side software written in Ruby and Rails, which
+            you will get to work as well. But we can’t wait to start a new
+            project in something that involves Clojure, Erlang, Scala or Ocaml.
+            So if you know those it’s cool as well. We want you to be good at
+            both functional and object-oriented programming, as well as
+            test-driven development.
+          </p>
+        </div>
+
+        <div class='section software'>
+          <img src='software.jpg'
+               alt='Image of laptop screen with Python code.' />
+        </div>
+
+        <div class='section robocat'>
+          <img id='logo' src='robocat.jpg' alt='Robocat logo.' />
+        </div>
+
+        <div class='section'>
+          <h3>Robocat</h3>
+          <p>
+            Here at
+            <a href='http://robo.cat'>Robocat</a>
+            we make apps and games for mobile devices. Our projects are small,
+            but focused.  We want you to work at our office in downtown
+            Copenhagen (near Nørreport station), but homeworking some of
+            the time is cool too. If you want to move to Copenhagen—we will try
+            to help.  We are looking for a full-time developer, but we can
+            compromise on that if we really want to hire you.
+          </p>
+          <p>
+            We are small, profitable, self-bootstrapped and easy going.
+            Right now we are 5 full-time and 5 part-time employees.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class='social-container'>
+      <div class='social'>
+        <a id='mail' href='mailto:hello@robo.cat'>
+            <img src='mail.png' alt='Mail icon.' />
+            <span>Get in touch</span>
+        </a>
+        <a id='twitter'
+           href='http://twitter.com/home?status=Did you know @robocat is looking for Python/Ruby/Clojure/Erlang/Scala/OCaml hackers in Copenhagen? http://jobs.robo.cat/'>
+            <img src='twitter.png' alt='Twitter icon.' />
+            <span>Tweet about it</span>
+        </a>
+      </div>
+    </div>
+    <div class='footer-container'>
+      <footer><h2>Guaranteed fun &amp; hard work</h2></footer>
+    </div>
   </body>
 </html>
