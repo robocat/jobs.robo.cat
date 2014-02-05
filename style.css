@@ -130,6 +130,22 @@ img {
 #robocat {
   margin: 8px -11px -12px -46px; }
 
+.social a {
+  font-weight: 100;
+  font-size: 45px; }
+.social #mail {
+  padding-left: 65px;
+  color: black;
+  background-color: #fff462; }
+.social #twitter {
+  padding-left: 50px;
+  color: black;
+  background-color: #96efff; }
+.social #mail:hover {
+  background-color: #cdc44c; }
+.social #twitter:hover {
+  background-color: #76c0cd; }
+
 @media screen and (max-width: 1000px) {
   .main-container .main .section {
     padding: 50px 20px; }
@@ -177,23 +193,10 @@ img {
     width: 100%;
     margin-right: 0; }
     .main-container .section:last-child {
-      margin-right: 0; } }
-.social a {
-  font-weight: 100;
-  font-size: 45px; }
-.social #mail {
-  padding-left: 65px;
-  color: black;
-  background-color: #fff462; }
-.social #twitter {
-  padding-left: 50px;
-  color: black;
-  background-color: #96efff; }
-.social #mail:hover {
-  background-color: #cdc44c; }
-.social #twitter:hover {
-  background-color: #76c0cd; }
+      margin-right: 0; }
 
+  .social a {
+    font-size: 25px; } }
 /*
 nav {
   background-color: #f3f3f3;

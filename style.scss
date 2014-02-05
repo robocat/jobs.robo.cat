@@ -111,6 +111,28 @@ img {
 #robocat {
   margin: 8px -11px -12px -46px;
 }
+.social {
+  a {
+    font-weight: 100;
+    font-size: 45px;
+  }
+  #mail {
+    padding-left: 65px;
+    color: black;
+    background-color: #fff462;
+  }
+  #twitter {
+    padding-left: 50px;
+    color: black;
+    background-color: #96efff;
+  }
+  #mail:hover {
+    background-color: #cdc44c;
+  }
+  #twitter:hover {
+    background-color: #76c0cd;
+  }
+}
 @include media(max-width 1000px) {
   .main-container .main .section {
     padding: 50px 20px;
@@ -152,27 +174,10 @@ img {
       @include omega;
     }
   }
-}
-.social {
-  a {
-    font-weight: 100;
-    font-size: 45px;
-  }
-  #mail {
-    padding-left: 65px;
-    color: black;
-    background-color: #fff462;
-  }
-  #twitter {
-    padding-left: 50px;
-    color: black;
-    background-color: #96efff;
-  }
-  #mail:hover {
-    background-color: #cdc44c;
-  }
-  #twitter:hover {
-    background-color: #76c0cd;
+  .social {
+    a {
+      font-size: 25px;
+    }
   }
 }
 /*
